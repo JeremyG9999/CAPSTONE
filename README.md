@@ -13,5 +13,6 @@ Service Layer:
     - DB Scripts: SQL commands to make the routes look cleaner.
     - AI Scripts: Ski Kit Learning files to generate predictions and charts.
     - Backend Scripts: Help routes look cleaner with NON SQL scripts.
-4. UI Layer:
-    - CSS: Various styles to enhance the UI.
+
+UI Layer
+1. CSS: Various styles to enhance the UI.
