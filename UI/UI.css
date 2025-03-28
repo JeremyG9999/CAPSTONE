@@ -1,0 +1,159 @@
+body { /*global*/
+    background-color: whitesmoke;
+}
+.split-layout {
+    display: flex;
+}
+.navbars { /*navbar*/
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    padding: 20px;
+}
+.navbars a {
+    color: white;
+}
+.login { /*login*/
+    box-shadow: 0 0 15px black;
+    max-width: 500px;
+    transform: translate(450px, 200px);
+    padding: 40px;
+    background-color: white;
+}
+.login input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+}
+.login button {
+    width: 100%;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+}
+.home-intro { /*home*/
+    box-shadow: 0 0 100px black;
+    display: inline-block;
+    background-color: beige;
+    margin: auto auto;
+}
+.hamburgers {
+    display: none;
+}
+.grid-container {
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.grid-item {
+    padding: 10px;
+    background-color: beige;
+}
+.logos {
+    max-width: 20px;
+}
+.hamburgers {
+    display: none;
+}
+.contact-us h1{ /*contact us*/
+    text-align: center;
+    color: darkblue;
+}
+.contact-us h2{
+    font-weight: bold;
+    font-family: arial;
+    color: darkblue;
+}
+.contact-us h3{
+    color: blue;
+}
+.part1, .part2, .part3 {
+    color: black;
+    background: radial-gradient(ellipse, white, white, whitesmoke, lightblue, blue);
+    box-shadow: 0 0 50px;
+    background-color: black;
+    padding: 5px;
+    margin: 10px;
+}
+.input-box, .radio-button, .check-box, .written-box {
+    border: 5px, solid lightgreen;
+}
+.contact-us-box {
+    box-shadow: 0 0 50px black;
+    max-width: 1000px;
+    padding: 40px;
+    background: radial-gradient(ellipse, white, white, whitesmoke, lightblue, blue);
+    margin: 20px auto;
+}
+.contact-submit {
+    background-color: green;
+    color: white;
+    width: 600px;
+    padding: 5px;
+}
+.submit-container {
+    display: flex;
+    justify-content: center;
+}
+.flavors-box, .other-box { /*flavors*/
+    background-size: cover;
+    background-position: center;
+    height: 669px;
+    width: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 20px lightseagreen;
+}
+.flavors-box:hover, .other-box:hover {
+    opacity: 0.8;
+}
+.flavor-button {
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
+.flavors-button-box {
+    bottom: 50%;
+    left: 25%;
+    position: absolute;
+}
+.flavor-button-box {
+    bottom: 50%;
+    left: 75%;
+    position: absolute;
+}
+.flavor-description { 
+    position: relative; /*about us uses this format*/
+    left: 5%; 
+    box-shadow: 0 0 20px black;
+    max-width: fit-content;
+    border: 10px solid blue;
+    margin-right: 10%;
+}
+.calendar-table { /*calendar*/
+    width: 100%;
+}
+.calendar-table th, .calendar-table td {
+    border: 5px solid black;
+    padding: 10px;
+    text-align: center;
+}
+.projections { /* projections */
+    box-shadow: 0 0 15px black;
+    padding: 30px; 
+    background-color: white; 
+    max-width: 50%; /*feedback uses this as well*/
+    margin: auto; 
+}
+.projections form {
+    display: flex;
+    flex-direction: column;
+}
+.projections input {
+    padding: 10px;
+}
+.projections button {
+    padding: 10px;
+    background-color: green;
+    color: white;
+}
