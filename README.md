@@ -1,6 +1,5 @@
 # CAPSTONE
 Service Layer:
-
 1. Routes:
     - Home Routes: Routes Derived from Home Template.
     - Login Routes: Routes derived from Login Template.
