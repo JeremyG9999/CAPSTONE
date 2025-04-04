@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+</head>
+<body>
+    <h1>Manager Login</h1>
+    <form action="/authenticate" method="POST">
+        <label for="user_name">User Name:</label>
+        <input name="user_name" required><br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" required><br>
+        <button type="submit">Login</button>
+    </form><br>
+    <a href="/create_account">Create Manager Account</a>
+    <table>
+        <thead>
+            <tr> 
+                <th>Id</th>
+                <th>User Name</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for datas in data %} 
+            <tr> 
+                <td>{{ datas[0] }}</td>
+                <td>{{ datas[1] }}</td>
+                <td>{{ datas[2] }}</td>
+                <td>{{ datas[3] }}</td>
+                <td><a href="/update_user/{{ datas[0] }}" type="button">Update</a></td>
+                <td><a href="/delete_user/{{ datas[0] }}" type="button">Delete</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
