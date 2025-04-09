@@ -1,0 +1,36 @@
+<head>
+    <link rel="stylesheet" href="/static/UI/stats.css">
+    <title>Truck Report</title>
+</head>
+<body>
+    <div class="links">
+        <a href="/home">Back to Home Page</a>
+    </div>
+    <h1>Total Purchases -- Popularity</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Flavors</th>
+                <th>Lava</th>
+                <th>Hot Fudge</th>
+                <th>Blizzard</th>
+                <th>Chocolate</th>
+                <th>Vanilla</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for data in total_purchases %}
+                <tr>
+                    <td>Totals</td>
+                    <td>{{ data[1] }}</td>
+                    <td>{{ data[2] }}</td>
+                    <td>{{ data[3] }}</td>
+                    <td>{{ data[4] }}</td>
+                    <td>{{ data[5] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <br><br><br>
+</body>
+</html>

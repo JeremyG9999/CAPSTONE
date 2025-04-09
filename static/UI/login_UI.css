@@ -1,6 +1,6 @@
 body {
     display: block;
-    background-color: whitesmoke;
+    background-color: blanchedalmond;
 }
 
 .login-container {
@@ -8,6 +8,7 @@ body {
     width: 350px;
     background-color: whitesmoke;
     box-shadow: 0 0 15px black;
+    margin: auto;
 }
 
 input {

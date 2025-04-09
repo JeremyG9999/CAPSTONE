@@ -1,0 +1,23 @@
+body {
+    background-color: blanchedalmond;
+}
+a {
+    text-align: center;
+    background-color: mediumseagreen;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 0 2px black;
+    text-decoration: none;
+}
+textarea {
+    display: block;
+    margin: auto;
+}
+button {
+    display: block;
+    margin: auto;
+}
+h1, h2 {
+    text-align: center;
+    color: teal;
+}

@@ -1,0 +1,36 @@
+<head>
+    <title>Flavor Count Display</title>
+    <link rel="stylesheet" href="/static/UI/stats.css">
+</head>
+<body>
+    <div class="links">
+        <a href="/home">Back to Home Page</a>
+    </div>
+    <h1>Flavor Count Data</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Day Number</th>
+                <th>Lava</th>
+                <th>Hot Fudge</th>
+                <th>Blizzard</th>
+                <th>Chocolate</th>
+                <th>Vanilla</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for entry in flavor_data %}
+                <tr>
+                    <td>{{ entry[0] }}</td> 
+                    <td>{{ entry[1] }}</td>
+                    <td>{{ entry[2] }}</td>
+                    <td>{{ entry[3] }}</td>
+                    <td>{{ entry[4] }}</td>
+                    <td>{{ entry[5] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <br><br><br>
+</body>
+</html>

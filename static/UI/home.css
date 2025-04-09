@@ -1,0 +1,36 @@
+body {
+    background-color: blanchedalmond;
+}
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    padding: 20px;
+}
+.navbar a {
+    text-align: center;
+    display: block;
+    background-color: teal;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 10px whitesmoke;
+    text-decoration: none;
+}
+h1 {
+    color: blue;
+    text-align: center;
+}
+.links a {
+    background-color: teal;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 5px;
+    box-shadow: 0 0 10px black;
+}
+p {
+    text-align: center;
+    color: teal;
+    font-size: larger;
+    text-decoration: underline;
+}

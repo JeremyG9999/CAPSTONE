@@ -1,0 +1,38 @@
+<head>
+    <link rel="stylesheet" href="/static/UI/stats.css">
+    <title>Truck Report</title>
+</head>
+<body>
+    <div class="links">
+        <a href="/home">Back to Home Page</a>
+    </div>
+    <h1>Truck Report - Flavor Totals Every 10 Days</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Period</th>
+                <th>Days Represented</th>
+                <th>Lava</th>
+                <th>Hot Fudge</th>
+                <th>Blizzard</th>
+                <th>Chocolate</th>
+                <th>Vanilla</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for period, start_day, end_day, total_lava, total_hot_fudge, total_blizzard, total_chocolate, total_vanilla in flavor_totals %}
+                <tr>
+                    <td>{{ period }}</td>
+                    <td>{{ start_day }} : {{ end_day }}</td>
+                    <td>{{ total_lava }}</td>
+                    <td>{{ total_hot_fudge }}</td>
+                    <td>{{ total_blizzard }}</td>
+                    <td>{{ total_chocolate }}</td>
+                    <td>{{ total_vanilla }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <br><br><br>
+</body>
+</html>

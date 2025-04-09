@@ -1,0 +1,21 @@
+body {
+    background-color: blanchedalmond;
+}
+h1 {
+    text-align: center;
+    color: navy;
+}
+p {
+    text-align: center;
+    color: teal;
+    font-size: larger;
+    text-decoration: underline;
+}
+a {
+    text-align: center;
+    background-color: mediumseagreen;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 0 2px black;
+    text-decoration: none;
+}

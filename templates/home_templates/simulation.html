@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/UI/simulation.css">
+    <title>Simulation</title>
+</head>
+<body>
+    <div class="links"></div>
+        <a href="/home">Back to Home Page</a>
+    </div>
+    <h1>Run Simulation</h1>
+    <form action="/run_simulation" method="POST">
+        <label for="simulation_type">Select Simulation Type:</label>
+        <select name="simulation_type" required>
+            <option value="run1">Winter Season Simulation </option>
+            <option value="run2">Summer Season Simulation</option>
+            <option value="run3">Normal Weather Simulation</option>
+        </select> <br>
+        <button type="submit">Run Simulation</button>
+    </form>
+    {% if last_entry %}
+    <h2>Last Flavor Count for Day: {{ day_number }}</h2>
+        <li>Lava: {{ last_entry[1] }}</li>
+        <li>Hot Fudge: {{ last_entry[2] }}</li>
+        <li>Blizzard: {{ last_entry[3] }}</li>
+        <li>Chocolate: {{ last_entry[4] }}</li>
+        <li>Vanilla: {{ last_entry[5] }}</li>
+    {% endif %}
+    {% if run %}
+    <h2>Simulation Results for Day  {{ day_number }}:</h2>
+        {% for flavor in run.results %}
+            <li>{{ flavor }}</li>
+        {% endfor %}
+    {% endif %}
+    <br><br><br>
+</body>
+</html>

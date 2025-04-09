@@ -1,10 +1,8 @@
 import sqlite3
 
 def db_setup():
-
     conn = sqlite3.connect("DB_layer/site.db")
     cursor = conn.cursor()
-
     cursor.execute("""
         CREATE TABLE IF NOT EXISTS users (
             id INTEGER PRIMARY KEY AUTOINCREMENT,

@@ -1,0 +1,31 @@
+body {
+    background-color: blanchedalmond;
+}
+h1 {
+    color: blue;
+}
+h2 {
+    color: green;
+}
+.links a {
+    background-color: teal;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 5px;
+    box-shadow: 0 0 10px black;
+}
+table {
+    width: 100%;
+}
+td {
+    padding: 8px;
+    text-align: center;
+    background-color: whitesmoke;
+}
+th {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 8px;
+}
